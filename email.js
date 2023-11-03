@@ -1,22 +1,37 @@
   
+//using eventhandler
+
+// let form = document.getElementById("form");
+
+// form.addEventListener('submit', function(event){
+//     event.preventDefault();
 
 
-let form = document.getElementById("form");
+//        let uname = document.getElementById("uname").value;
 
-form.addEventListener('submit', function(event){
-    event.preventDefault();
+//        console.log(uname);
+
+//        let email = document.getElementById("email").value;
+
+//        console.log(email);
+
+//        let pwd = document.getElementById("pwd").value;
+
+//        console.log(pwd);
+
+// })
 
 
-       let uname = document.getElementById("uname").value;
 
-       console.log(uname);
+//Using onsubmit event hander
 
-       let email = document.getElementById("email").value;
+function handleForm(e) {
+   e.preventDefault();
+   alert("Form is submitted");
 
-       console.log(email);
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
 
-       let pwd = document.getElementById("pwd").value;
-
-       console.log(pwd);
-
-})
+ console.log(username);
+ console.log(password);
+}

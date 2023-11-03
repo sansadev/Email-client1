@@ -12,7 +12,7 @@
     
     <p id="demo"></p>
     <form class="flex-container"  id="form" action="">
-        <h2>Sign Up Form</h2>
+        <h2>Sign Up Form using Event handler</h2>
         
         <input class="input-text" type="text" id="uname" placeholder="User name"> <br>
        
@@ -23,7 +23,19 @@
         <input type="submit" class="btn" value="Register">
         
     </form>
-    <script src="email.js"></script>
+
+   <!-- using form onsubmit function -->
+
+   <h2>Sign Up Form using onsubmit function</h2>
+
+   <form id="form" onsubmit="handleForm(event)">
+
+    <input type="text" id="username" required placeholder="Username"><br>
+    <input type="text" id="password" required placeholder="*****"><br>
+    <input type="submit" value="submit">
+
+   </form>
+   <script src="email.js"></script>
 </body>
 
 </html>
